@@ -4,16 +4,133 @@ font-family: 'Yeseva One', cursive; */
 
 /* Basic setup start */
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    /* font-size: 62.5%; */
+}
+
 body{
     font-family: 'Lato', sans-serif;
+    /* font-size: 1.6rem; */
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+h1{
+    font-size: 3.2rem;
+}
+
+h2{
+    font-size: 2.4rem;
+}
+
+h3{
+    font-size: 1.9rem;
+}
+
+h5{
+    font-size: 1.33rem;
+}
+
+h6{
+    font-size: 1.1rem;
+}
+
+.container{
+    width: 100%;
 }
 
 /* Basic setup end */
 
-.box1{
-    background-color: yellow;
+
+/* Header starts */
+
+.navbar{
+    position: sticky;
+    top: 0;
+    background-image: linear-gradient(to bottom, black, transparent);
 }
 
-.box2{
-    background-color: cyan;
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
 }
+
+nav .nav-links{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+nav .nav-links .nav-link{
+    padding: 1rem 0;
+    font-family: 'Gentium Book Basic', serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav .nav-links .nav-link:hover a{
+    background: #fff;
+    color: #000;
+}
+
+nav .nav-links .nav-link a{
+    color: #fff;
+    padding: 0.5rem 1rem;
+    -webkit-transition: 0.5s all ease-in-out;
+    -moz-transition: 0.5s all ease-in-out;
+    -webkit-o: 0.5s all ease-in-out;
+    transition: 0.5s all ease-in-out;
+}
+
+.social-links{
+    display: flex;
+    justify-content: space-between;
+    width: 4rem;
+    text-align: center;
+}
+
+nav .social-links .social-link a{
+    color: #DAB33E;
+}
+
+.header{
+    background-image: url('../assets/images/header-bg.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.logo{
+    width: 6rem;
+}
+
+#mobile-menu-btn{
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    padding-top: 1.5rem;
+    display: none;
+}
+
+#mobile-menu-btn:focus{
+    outline: none;
+}
+
+
+/* Header ends */

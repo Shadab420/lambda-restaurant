@@ -1,0 +1,19 @@
+/* font-family: 'Gentium Book Basic', serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Yeseva One', cursive; */
+
+/* Basic setup start */
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+/* Basic setup end */
+
+.box1{
+    background-color: yellow;
+}
+
+.box2{
+    background-color: cyan;
+}

@@ -53,13 +53,19 @@ h6{
 
 /* Basic setup end */
 
+/* Reusable component start*/
+.divider{
+    text-align: center;
+}
+/* Reusable component end */
+
 
 /* Header starts */
 
 .navbar{
     position: sticky;
     top: 0;
-    background-image: linear-gradient(to bottom, black, transparent);
+    background-image: linear-gradient(to bottom, black 15%, transparent);
 }
 
 nav{
@@ -100,12 +106,15 @@ nav .nav-links .nav-link a{
 .social-links{
     display: flex;
     justify-content: space-between;
-    width: 4rem;
+    width: 5rem;
     text-align: center;
+    padding: 0 0.5rem;
 }
+
 
 nav .social-links .social-link a{
     color: #DAB33E;
+    padding: 0;
 }
 
 .header{
@@ -114,6 +123,8 @@ nav .social-links .social-link a{
     background-position: center top;
     background-size: cover;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .logo{
@@ -132,5 +143,36 @@ nav .social-links .social-link a{
     outline: none;
 }
 
+.header-title{
+    width: 60%;
+    margin:20vh auto 5vh auto;
+    font-size: 4.2rem;
+    text-align: center;
+    color: #F7F6F2;
+    font-family: 'Yeseva One', cursive;
+    font-weight: 300;
+}
+
+.header-buttons{
+    margin: 4rem auto;
+    text-align: center;
+}
+
+.header-buttons a{
+    padding: 1rem 4rem;
+    color: #fff;    
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+}
+
+.header-buttons a:first-child{
+    background-color: rgba(0,0,0,0.5);
+    margin-right: 1rem;
+
+}
+
+.header-buttons a:last-child{
+    background-color: rgba(255,255,255,0.3);
+}
 
 /* Header ends */

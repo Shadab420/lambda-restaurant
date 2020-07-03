@@ -91,6 +91,10 @@
         margin-left: 20%;
     }
 
+    .menu-section{
+        grid-template-columns: auto;
+    }
+
 }
 
 @media screen and (max-width: 500px){

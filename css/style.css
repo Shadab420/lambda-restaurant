@@ -56,23 +56,46 @@ h6{
 /* Reusable component start*/
 .divider{
     text-align: center;
+    width: 100%;
+}
+
+section{
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
 }
 /* Reusable component end */
 
 
 /* Header starts */
 
+.header{
+    background-image: url('../assets/images/header-bg.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+}
+
 .navbar{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.7) 15%, transparent);
+    height: 5rem;
     position: sticky;
     top: 0;
-    background-image: linear-gradient(to bottom, black 15%, transparent);
+    z-index: 9999;
 }
 
 nav{
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 80%;
+    height: 100%;
     margin: auto;
 }
 
@@ -89,14 +112,14 @@ nav .nav-links .nav-link{
     text-align: center;
 }
 
-nav .nav-links .nav-link:hover a{
-    background: #fff;
+nav .nav-links .nav-link > a:hover{
+    background-color: #fff;
     color: #000;
 }
 
-nav .nav-links .nav-link a{
+nav .nav-links .nav-link > a{
     color: #fff;
-    padding: 0.5rem 1rem;
+    padding: 1.7rem 1rem;
     -webkit-transition: 0.5s all ease-in-out;
     -moz-transition: 0.5s all ease-in-out;
     -webkit-o: 0.5s all ease-in-out;
@@ -117,15 +140,7 @@ nav .social-links .social-link a{
     padding: 0;
 }
 
-.header{
-    background-image: url('../assets/images/header-bg.png');
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
+
 
 .logo{
     width: 6rem;
@@ -176,3 +191,57 @@ nav .social-links .social-link a{
 }
 
 /* Header ends */
+
+/* offer section starts */
+
+.offer-section{
+    background: url('../assets/images/dish-bg.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 2rem;
+}
+
+.cook-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.cook-div h3{
+    text-align: center;
+    font-family: 'Yeseva One', cursive;
+    font-weight: 300;
+    color: #cc9900;
+    margin: 3rem auto 1rem auto;
+
+}
+
+.offer-description{
+    width: 80%;
+    margin-top: 1rem;
+    margin-left: 10%;
+    margin-bottom: 2rem;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.cook-image{
+    width: 30%;
+    margin-left: 40%;
+}
+
+.dish-div img{
+    width: 85%;
+    margin: 5% auto;
+}
+
+
+/* offer section ends */
+
+/* Ingredients section start */
+
+
+/* Ingredients section end */

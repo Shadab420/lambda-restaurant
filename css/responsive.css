@@ -6,6 +6,11 @@
     .header-title{
         font-size: 3.2rem;
     }
+
+    .offer-description{
+        width: 60%;
+        margin-left: 20%;
+    }
 }
 
 @media screen and (max-width: 830px){
@@ -25,12 +30,25 @@
         justify-content: space-evenly;
         width: 50%;
     }
+
+    .dish-div img{
+        margin: 10% auto;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 700px){
+    .navbar{
+        height: auto;
+    }
+
     nav .nav-links{
         flex-direction: column;
         display: none;
+    }
+
+    nav .nav-links .nav-link > a{
+        padding: 0.5rem 1rem;
     }
 
     .social-links{
@@ -53,6 +71,15 @@
     
     .header-buttons a{
         padding: 1rem 2rem;
+    }
+
+    .offer-section{
+        grid-template-columns: 1fr;
+    }
+
+    .dish-div img{
+        width: 60%;
+        margin-left: 20%;
     }
 
 }

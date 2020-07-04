@@ -59,6 +59,25 @@ h6{
     width: 100%;
 }
 
+button{
+    padding: 0.5rem 3rem;
+    background: #cc9900;
+    color: #fff;
+    border: none;
+    -webkit-transition: 0.5s all ease-in-out;
+    -moz-transition: 0.5s all ease-in-out;
+    -o-transition: 0.5s all ease-in-out;
+    transition: 0.5s all ease-in-out;
+}
+button:hover{
+    background: #fff;
+    color: #cc9900;
+    border: 1px solid #cc9900;
+}
+
+button:focus{
+    outline: none;
+}
 
 /* Reusable component end */
 
@@ -205,7 +224,7 @@ nav .social-links .social-link a{
     flex-direction: column;
 }
 
-.cook-div h3, .ingredients-section h3, .category-name{
+.cook-div h3, .ingredients-section h3, .category-name, .reviews-title, .reservations-section h3{
     text-align: center;
     font-family: 'Yeseva One', cursive;
     font-weight: 300;
@@ -214,7 +233,7 @@ nav .social-links .social-link a{
 
 }
 
-.offer-description, .ingredients-description{
+.offer-description, .ingredients-description, .reviews-description, .guest-info p, .reservations-description{
     width: 80%;
     margin-top: 1rem;
     margin-left: 10%;
@@ -289,6 +308,7 @@ nav .social-links .social-link a{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-top: 2rem;
+    padding-bottom: 3rem;
 }
 
 .menu-item{
@@ -312,3 +332,148 @@ nav .social-links .social-link a{
 }
 /* Menu section end */
 
+/* Reviews section start */
+
+.reviews-section{
+    background: url('../assets/images/review-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: auto;
+    padding-top: 2rem;
+}
+
+.reviews-section h3{
+    color: #fff;
+}
+
+.reviews-info{
+    background-color: rgba(0,0,0,0.7);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 40%;
+    margin-left: 35%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.reviews-description{
+    color: #fff;
+}
+
+.guest-info p{
+    color: #fff;
+}
+
+/* Reviews section end */
+
+
+/* Reservations section start */
+
+.reservations-section{
+    background: url('../assets/images/dish-bg.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 2rem;
+}
+
+
+.item-images-div{
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.item-images-div img{
+    margin-right: 1rem;
+    width: 15rem;
+    height: 30rem;
+    margin-top: 5rem;
+}
+
+.reservations-section h3{
+    color: #cc9900;
+}
+
+.reservations-info{
+    padding-top: 1rem;
+    width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.reservations-description{
+    color: #000;
+}
+
+.reservations-form{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 4rem;
+}
+
+.reservations-form img{
+    width: 25%;
+}
+
+.reservations-form-div{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.reservations-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    
+}
+
+.form-input-group{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #cc9900;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="number"]{
+    padding: 0.45rem 1rem;
+}
+
+input[type="date"]{
+    padding: 0.3rem 1rem;
+}
+
+input{
+    border: none;
+    -webkit-transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out;
+
+
+}
+
+input:focus{
+    outline: 1px solid #cc9900;
+}
+
+.form-input-group button{
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+
+
+/* Reservations section end */

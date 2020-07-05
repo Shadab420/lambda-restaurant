@@ -1,4 +1,7 @@
 @media screen and (max-width: 1200px){
+    html{
+        font-size: 70%;
+    }
     .item-images-div img{
         width: 35%;
     }
@@ -28,6 +31,10 @@
 
     input{
         width: 100%;
+    }
+
+    .item-images-div img{
+        width: 45%;
     }
 }
 
@@ -80,8 +87,13 @@
 }
 
 @media screen and (max-width: 700px){
+    html{
+        font-size: 85%;
+    }
     .navbar{
         height: auto;
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.7) 75%, transparent);
+
     }
 
     nav .nav-links{
@@ -98,17 +110,8 @@
         width: 100%;
     }
 
-    .logo{
-        width: 5rem;
-    }
-
     #mobile-menu-btn{
         display: block;
-    }
-
-    .header-title{
-        font-size: 2.8rem;
-        margin:10vh auto 5vh auto;
     }
     
     .header-buttons a{
@@ -140,9 +143,6 @@
 
 @media screen and (max-width: 500px){
 
-    .header-title{
-        font-size: 2.2rem;
-    }
     .header-buttons{
         display: flex;
         flex-direction: column;
